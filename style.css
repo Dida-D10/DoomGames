@@ -1,0 +1,343 @@
+*{
+margin :0;
+padding:0;
+box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "doom";
+    src: url("fonts/EternalLogo-MVO7Y.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "doom1";
+    src: url("fonts/EternalUiRegular-1Gap2.ttf") format("truetype");
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+     background-repeat: no-repeat;
+    
+}
+
+header{
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{ 
+    margin:3px;  
+    color:white;
+    font-family: "doom";
+
+}
+
+.nav-list{
+    width: 400px;
+    justify-content: end;
+}
+
+.nav-list a{  
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-family: "doom1";
+    padding: 5px;
+    font-size: 25px;
+    transition: .6s;
+}
+
+.nav-list a:hover{  
+background: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border-radius: 5px;
+}
+
+.content{
+    background-image: url("image/kisspng-mortal-kombat.png"); 
+    background-position: right;  
+    width: 100%;
+    height: 90vh; 
+    background-repeat: no-repeat ;
+    display: flex;
+    align-items: center;
+             
+}
+
+.content-text{
+background-color: rgba(0, 0, 0, 0.603);
+border-radius: 20px;  
+width: 800px;
+height: 250px;
+display: block;
+margin: 10px;
+}
+.text{
+display: flex;
+font-family: "doom1";
+color:rgb(255, 255, 255);
+font-size: 60px;
+margin: 10px;   
+}
+
+
+
+
+/**PLAYERS**/
+
+.section-title{
+	background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
+    display: flex;
+	align-items:  center;
+	justify-content: center;
+    
+}
+
+.section-title h1{
+	color:white;
+	font-family: 'doom1';
+	font-size: 35px;
+}
+
+.content-players{
+    
+ background-image: url('image/supermario.png');
+ background-repeat: no-repeat;
+ background-position: 750px;
+ background-size: 140px;
+ background-position-y: 20px;
+display: flex;
+flex-wrap: wrap;
+margin-top: 150px;
+}
+
+#content-p{
+   margin-bottom: 150px;
+   width: 100%;
+   margin:30px;
+
+}
+
+#content-p p{
+    font-size: 40px;
+    font-family:'Oswald', sans-serif;
+}
+
+.content-img{
+justify-content: end;
+
+
+}
+
+.content-players article{
+	display: flex;
+	background-color: rgb(79, 85, 94);
+	margin: 10px;
+	max-width: 600px;
+	max-height: 160px;
+	border-radius: 15px;
+	border: 3px solid rgb(91, 90, 158);
+	
+}
+
+.content-players article div{
+background-color: rgb(79, 85, 94);
+border-radius: 15px;
+
+}
+
+.content-players article div h2{
+	color: white;
+	margin: 3px;
+	font-family: 'doom1';
+}
+
+.content-players article div p{
+	color: white;
+	margin: 5px;	
+    font-size: 20px;
+    font-family: 'Times New Roman', Times;
+}
+
+.content-players article div .genero{
+	color: rgb(11, 255, 194);
+	margin: 5px;
+	text-align: end;	
+}
+
+
+/**Historia**/
+
+.section-history{
+   
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.history-p{
+    margin: 40px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.history-p p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+.history{
+    background-color: rgba(36, 3, 155, 0.788);
+    border: 3px solid black;
+    border-radius: 35px;
+    width: 95%;
+    height: 500px;
+    margin: 34px;
+    align-items: center;
+    justify-content: center;
+}
+
+.history h2{
+    margin-top: 5px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color:rgb(6, 238, 219);
+    font-family: 'doom';   
+}
+
+.history p{
+    color:rgb(255, 255, 255);
+font-size: 18px;
+margin: 20px;
+font-family: 'Mochiy Pop P One', sans-serif;
+
+}
+
+
+/**CONSOLES**/
+
+.section-consoles{
+display: flex;
+flex-direction: column;
+margin-top: 100px;
+
+}
+
+.console-p{
+    margin: 40px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.console-p p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+.consoles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.consoles-article{
+    background-color: aliceblue;
+    display: flex;
+    width: 390px;
+    height: 110px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    opacity: .8;
+     
+}
+
+.consoles-article:hover{
+    display: flex;
+    width: 390px;
+    height: 110px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    opacity: 1;
+     
+}
+
+.consoles-article h3{
+    font-family: 'doom';
+    margin: 5px;
+}
+
+.consoles-article p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/**Footer**/
+
+footer{
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-top: 80px;
+    
+    
+    
+}
+
+footer div{
+    margin:30px;
+    display: flex;
+    
+    
+}
+
+footer div h4{
+    color:white;
+    font-size: 45px;
+    font-family: 'doom';
+}
+
+footer div p{
+    color:white;
+    margin: 5px;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+}
+
+    
+
+
+.redes-sociais{
+    display: flex;
+    background-color: black;
+    width: 800px;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.redes-sociais div{ 
+align-items: center;
+justify-content: center;
+
+}
+
+#paragrafy{
+    width: 500px;
+}
+
+.redes-sociais div a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
